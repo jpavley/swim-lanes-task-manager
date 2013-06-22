@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1864508D17753BE800EE605F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1864508C17753BE800EE605F /* Cocoa.framework */; };
+		1864509717753BE800EE605F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1864509517753BE800EE605F /* InfoPlist.strings */; };
+		1864509917753BE800EE605F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864509817753BE800EE605F /* main.m */; };
+		1864509D17753BE800EE605F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1864509B17753BE800EE605F /* Credits.rtf */; };
+		186450A017753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864509F17753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.m */; };
+		186450A317753BE800EE605F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186450A117753BE800EE605F /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1864508917753BE800EE605F /* SwimLanesTaskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwimLanesTaskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1864508C17753BE800EE605F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1864508F17753BE800EE605F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1864509017753BE800EE605F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1864509117753BE800EE605F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1864509417753BE800EE605F /* SwimLanesTaskManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwimLanesTaskManager-Info.plist"; sourceTree = "<group>"; };
+		1864509617753BE800EE605F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1864509817753BE800EE605F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1864509A17753BE800EE605F /* SwimLanesTaskManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwimLanesTaskManager-Prefix.pch"; sourceTree = "<group>"; };
+		1864509C17753BE800EE605F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1864509E17753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeakLine_SwimLanesTaskManagerAppDelegate.h; sourceTree = "<group>"; };
+		1864509F17753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeakLine_SwimLanesTaskManagerAppDelegate.m; sourceTree = "<group>"; };
+		186450A217753BE800EE605F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1864508617753BE800EE605F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1864508D17753BE800EE605F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1864508017753BE800EE605F = {
+			isa = PBXGroup;
+			children = (
+				1864509217753BE800EE605F /* SwimLanesTaskManager */,
+				1864508B17753BE800EE605F /* Frameworks */,
+				1864508A17753BE800EE605F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1864508A17753BE800EE605F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1864508917753BE800EE605F /* SwimLanesTaskManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1864508B17753BE800EE605F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1864508C17753BE800EE605F /* Cocoa.framework */,
+				1864508E17753BE800EE605F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1864508E17753BE800EE605F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1864508F17753BE800EE605F /* AppKit.framework */,
+				1864509017753BE800EE605F /* CoreData.framework */,
+				1864509117753BE800EE605F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1864509217753BE800EE605F /* SwimLanesTaskManager */ = {
+			isa = PBXGroup;
+			children = (
+				1864509E17753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.h */,
+				1864509F17753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.m */,
+				186450A117753BE800EE605F /* MainMenu.xib */,
+				1864509317753BE800EE605F /* Supporting Files */,
+			);
+			path = SwimLanesTaskManager;
+			sourceTree = "<group>";
+		};
+		1864509317753BE800EE605F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1864509417753BE800EE605F /* SwimLanesTaskManager-Info.plist */,
+				1864509517753BE800EE605F /* InfoPlist.strings */,
+				1864509817753BE800EE605F /* main.m */,
+				1864509A17753BE800EE605F /* SwimLanesTaskManager-Prefix.pch */,
+				1864509B17753BE800EE605F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1864508817753BE800EE605F /* SwimLanesTaskManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 186450A617753BE800EE605F /* Build configuration list for PBXNativeTarget "SwimLanesTaskManager" */;
+			buildPhases = (
+				1864508517753BE800EE605F /* Sources */,
+				1864508617753BE800EE605F /* Frameworks */,
+				1864508717753BE800EE605F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwimLanesTaskManager;
+			productName = SwimLanesTaskManager;
+			productReference = 1864508917753BE800EE605F /* SwimLanesTaskManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1864508117753BE800EE605F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "SpeakLine SwimLanesTaskManager";
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = " John Pavley";
+			};
+			buildConfigurationList = 1864508417753BE800EE605F /* Build configuration list for PBXProject "SwimLanesTaskManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1864508017753BE800EE605F;
+			productRefGroup = 1864508A17753BE800EE605F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1864508817753BE800EE605F /* SwimLanesTaskManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1864508717753BE800EE605F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1864509717753BE800EE605F /* InfoPlist.strings in Resources */,
+				1864509D17753BE800EE605F /* Credits.rtf in Resources */,
+				186450A317753BE800EE605F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1864508517753BE800EE605F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1864509917753BE800EE605F /* main.m in Sources */,
+				186450A017753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1864509517753BE800EE605F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1864509617753BE800EE605F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1864509B17753BE800EE605F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1864509C17753BE800EE605F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		186450A117753BE800EE605F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				186450A217753BE800EE605F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		186450A417753BE800EE605F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		186450A517753BE800EE605F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		186450A717753BE800EE605F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwimLanesTaskManager/SwimLanesTaskManager-Prefix.pch";
+				INFOPLIST_FILE = "SwimLanesTaskManager/SwimLanesTaskManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		186450A817753BE800EE605F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwimLanesTaskManager/SwimLanesTaskManager-Prefix.pch";
+				INFOPLIST_FILE = "SwimLanesTaskManager/SwimLanesTaskManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1864508417753BE800EE605F /* Build configuration list for PBXProject "SwimLanesTaskManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186450A417753BE800EE605F /* Debug */,
+				186450A517753BE800EE605F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		186450A617753BE800EE605F /* Build configuration list for PBXNativeTarget "SwimLanesTaskManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186450A717753BE800EE605F /* Debug */,
+				186450A817753BE800EE605F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1864508117753BE800EE605F /* Project object */;
+}
