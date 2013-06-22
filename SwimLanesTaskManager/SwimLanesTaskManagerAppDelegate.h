@@ -1,5 +1,5 @@
 //
-//  SpeakLine_SwimLanesTaskManagerAppDelegate.h
+//  SwimLanesTaskManagerAppDelegate.h
 //  SwimLanesTaskManager
 //
 //  Created by  John Pavley on 6/21/13.
@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface SpeakLine_SwimLanesTaskManagerAppDelegate : NSObject <NSApplicationDelegate>
+@interface SwimLanesTaskManagerAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 

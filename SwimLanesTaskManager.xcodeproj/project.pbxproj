@@ -11,7 +11,7 @@
 		1864509717753BE800EE605F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1864509517753BE800EE605F /* InfoPlist.strings */; };
 		1864509917753BE800EE605F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864509817753BE800EE605F /* main.m */; };
 		1864509D17753BE800EE605F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1864509B17753BE800EE605F /* Credits.rtf */; };
-		186450A017753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864509F17753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.m */; };
+		186450A017753BE800EE605F /* SwimLanesTaskManagerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864509F17753BE800EE605F /* SwimLanesTaskManagerAppDelegate.m */; };
 		186450A317753BE800EE605F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186450A117753BE800EE605F /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +26,8 @@
 		1864509817753BE800EE605F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1864509A17753BE800EE605F /* SwimLanesTaskManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwimLanesTaskManager-Prefix.pch"; sourceTree = "<group>"; };
 		1864509C17753BE800EE605F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		1864509E17753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeakLine_SwimLanesTaskManagerAppDelegate.h; sourceTree = "<group>"; };
-		1864509F17753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeakLine_SwimLanesTaskManagerAppDelegate.m; sourceTree = "<group>"; };
+		1864509E17753BE800EE605F /* SwimLanesTaskManagerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwimLanesTaskManagerAppDelegate.h; sourceTree = "<group>"; };
+		1864509F17753BE800EE605F /* SwimLanesTaskManagerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwimLanesTaskManagerAppDelegate.m; sourceTree = "<group>"; };
 		186450A217753BE800EE605F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,8 +82,8 @@
 		1864509217753BE800EE605F /* SwimLanesTaskManager */ = {
 			isa = PBXGroup;
 			children = (
-				1864509E17753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.h */,
-				1864509F17753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.m */,
+				1864509E17753BE800EE605F /* SwimLanesTaskManagerAppDelegate.h */,
+				1864509F17753BE800EE605F /* SwimLanesTaskManagerAppDelegate.m */,
 				186450A117753BE800EE605F /* MainMenu.xib */,
 				1864509317753BE800EE605F /* Supporting Files */,
 			);
@@ -168,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1864509917753BE800EE605F /* main.m in Sources */,
-				186450A017753BE800EE605F /* SpeakLine_SwimLanesTaskManagerAppDelegate.m in Sources */,
+				186450A017753BE800EE605F /* SwimLanesTaskManagerAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,14 +1,14 @@
 //
-//  SpeakLine_SwimLanesTaskManagerAppDelegate.m
+//  SwimLanesTaskManagerAppDelegate.m
 //  SwimLanesTaskManager
 //
 //  Created by  John Pavley on 6/21/13.
 //  Copyright (c) 2013  John Pavley. All rights reserved.
 //
 
-#import "SpeakLine_SwimLanesTaskManagerAppDelegate.h"
+#import "SwimLanesTaskManagerAppDelegate.h"
 
-@implementation SpeakLine_SwimLanesTaskManagerAppDelegate
+@implementation SwimLanesTaskManagerAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
