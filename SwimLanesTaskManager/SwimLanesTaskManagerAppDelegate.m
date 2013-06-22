@@ -15,4 +15,12 @@
     // Insert code here to initialize your application
 }
 
+- (IBAction)addTask:(id)sender {
+}
+
+- (IBAction)clearCompleted:(id)sender {
+}
+
+- (IBAction)clearOnHold:(id)sender {
+}
 @end

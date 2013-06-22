@@ -1410,7 +1410,6 @@
 							<string key="NSFrame">{{576, 8}, {129, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="482254975">
@@ -1443,7 +1442,7 @@
 											<string key="NSFrameSize">{702, 461}</string>
 											<reference key="NSSuperview" ref="522465233"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="591592187"/>
+											<reference key="NSNextKeyView" ref="147800673"/>
 											<string key="NSReuseIdentifierKey">_NS:13</string>
 											<bool key="NSEnabled">YES</bool>
 											<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
@@ -1682,7 +1681,7 @@
 							<string key="NSFrame">{{20, 46}, {703, 479}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="147800673"/>
+							<reference key="NSNextKeyView" ref="522465233"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<int key="NSsFlags">133778</int>
 							<reference key="NSVScroller" ref="591592187"/>
@@ -1700,7 +1699,7 @@
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="219479023"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1440, 900}}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
 			</object>
@@ -2392,6 +2391,78 @@
 						<reference key="destination" ref="972006081"/>
 					</object>
 					<int key="connectionID">532</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">taskTextField</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="219479023"/>
+					</object>
+					<int key="connectionID">587</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">taskAddButton</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="1036904039"/>
+					</object>
+					<int key="connectionID">588</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">clearCompletedButton</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="451778108"/>
+					</object>
+					<int key="connectionID">589</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">clearOnHoldButton</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="944194258"/>
+					</object>
+					<int key="connectionID">590</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">taskTable</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="997581066"/>
+					</object>
+					<int key="connectionID">591</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">addTask:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="1036904039"/>
+					</object>
+					<int key="connectionID">592</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">clearCompleted:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="451778108"/>
+					</object>
+					<int key="connectionID">593</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">clearOnHold:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="944194258"/>
+					</object>
+					<int key="connectionID">594</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">dataSource</string>
+						<reference key="source" ref="997581066"/>
+						<reference key="destination" ref="976324537"/>
+					</object>
+					<int key="connectionID">595</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -4031,7 +4102,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">586</int>
+			<int key="maxID">595</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4046,17 +4117,59 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">SwimLanesTaskManagerAppDelegate</string>
 					<string key="superclassName">NSObject</string>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">window</string>
-						<string key="NS.object.0">NSWindow</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">window</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="addTask:">id</string>
+						<string key="clearCompleted:">id</string>
+						<string key="clearOnHold:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="addTask:">
+							<string key="name">addTask:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clearCompleted:">
+							<string key="name">clearCompleted:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="clearOnHold:">
+							<string key="name">clearOnHold:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="clearCompletedButton">NSButton</string>
+						<string key="clearOnHoldButton">NSButton</string>
+						<string key="taskAddButton">NSButton</string>
+						<string key="taskTable">NSTableView</string>
+						<string key="taskTextField">NSTextField</string>
+						<string key="window">NSWindow</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="clearCompletedButton">
+							<string key="name">clearCompletedButton</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="clearOnHoldButton">
+							<string key="name">clearOnHoldButton</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="taskAddButton">
+							<string key="name">taskAddButton</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="taskTable">
+							<string key="name">taskTable</string>
+							<string key="candidateClassName">NSTableView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="taskTextField">
+							<string key="name">taskTextField</string>
+							<string key="candidateClassName">NSTextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="window">
 							<string key="name">window</string>
 							<string key="candidateClassName">NSWindow</string>
 						</object>
-					</object>
+					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/SwimLanesTaskManagerAppDelegate.h</string>
