@@ -1466,6 +1466,7 @@
 											</object>
 											<array class="NSMutableArray" key="NSTableColumns">
 												<object class="NSTableColumn" id="138693136">
+													<string key="NSIdentifier">col1</string>
 													<double key="NSWidth">148</double>
 													<double key="NSMinWidth">40</double>
 													<double key="NSMaxWidth">1000</double>
@@ -1517,6 +1518,7 @@
 													<reference key="NSTableView" ref="997581066"/>
 												</object>
 												<object class="NSTableColumn" id="694558782">
+													<string key="NSIdentifier">col2</string>
 													<double key="NSWidth">188</double>
 													<double key="NSMinWidth">40</double>
 													<double key="NSMaxWidth">1000</double>
@@ -1543,6 +1545,7 @@
 													<reference key="NSTableView" ref="997581066"/>
 												</object>
 												<object class="NSTableColumn" id="969397124">
+													<string key="NSIdentifier">col3</string>
 													<double key="NSWidth">191</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -1574,6 +1577,7 @@
 													<reference key="NSTableView" ref="997581066"/>
 												</object>
 												<object class="NSTableColumn" id="101855350">
+													<string key="NSIdentifier">col4</string>
 													<double key="NSWidth">163</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -1699,7 +1703,7 @@
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="219479023"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1440, 900}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1920, 1058}}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
 			</object>
