@@ -29,31 +29,40 @@ NSString *const kColumn4 = @"col4";
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    NSLog(@"%@" , NSStringFromSelector(_cmd));
 }
 
 - (IBAction)addTask:(id)sender
 {
-    
+    NSLog(@"%@" , NSStringFromSelector(_cmd));
+    NSString *taskString = [taskTextField stringValue];
+    if ([taskString length] != 0) {
+        [_backlog addObject:taskString];
+    }
+    [taskTable reloadData];
 }
 
 - (IBAction)clearCompleted:(id)sender
 {
+    NSLog(@"%@" , NSStringFromSelector(_cmd));
     
 }
 
 - (IBAction)clearOnHold:(id)sender
 {
+    NSLog(@"%@" , NSStringFromSelector(_cmd));
     
 }
 
 - (void)awakeFromNib
 {
+    NSLog(@"%@" , NSStringFromSelector(_cmd));
     
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tv
 {
+    NSLog(@"%@" , NSStringFromSelector(_cmd));
     NSInteger result = 0;
     
     // return the lenth of the array with the most members
@@ -68,6 +77,7 @@ NSString *const kColumn4 = @"col4";
 
 - (id)tableView:(NSTableView *)tv objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
+    NSLog(@"%@" , NSStringFromSelector(_cmd));
     NSString *result = nil;
     
     if ([[tableColumn identifier] isEqualToString:kColumn1]) {
@@ -87,6 +97,7 @@ NSString *const kColumn4 = @"col4";
 
 - (void)tableViewSelectionDidChange:(NSNotification *)notification
 {
+    NSLog(@"%@" , NSStringFromSelector(_cmd));
     
 }
 
