@@ -13,7 +13,6 @@ FOUNDATION_EXPORT NSString *const kColumn2;
 FOUNDATION_EXPORT NSString *const kColumn3;
 FOUNDATION_EXPORT NSString *const kColumn4;
 
-
 @interface SwimLanesTaskManagerAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (strong) NSMutableArray *_backlog;

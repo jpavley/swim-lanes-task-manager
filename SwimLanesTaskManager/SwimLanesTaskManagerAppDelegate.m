@@ -50,6 +50,7 @@ NSString *const kColumn4 = @"col4";
         [_backlog addObject:taskString];
     }
     [taskTable reloadData];
+    [taskTextField setStringValue:@""];
 }
 
 - (IBAction)clearCompleted:(id)sender
@@ -87,13 +88,11 @@ NSString *const kColumn4 = @"col4";
 
 - (id)tableView:(NSTableView *)tv objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    NSLog(@"%@" , NSStringFromSelector(_cmd));
+    // NSLog(@"%@" , NSStringFromSelector(_cmd));
     NSString *result = nil;
     
     // truth table to simplify ugly if/else statements below
-    
-    // TODO: Should I cache these values for performance?
-    
+        
     BOOL isColumn1 = [[tableColumn identifier] isEqualToString:kColumn1];
     BOOL isColumn2 = [[tableColumn identifier] isEqualToString:kColumn2];
     BOOL isColumn3 = [[tableColumn identifier] isEqualToString:kColumn3];
@@ -122,10 +121,43 @@ NSString *const kColumn4 = @"col4";
     return result;
 }
 
+- (void)tableView:(NSTableView *)tableView
+   setObjectValue:(id)object
+   forTableColumn:(NSTableColumn *)tableColumn
+              row:(NSInteger)row
+{
+    NSLog(@"%@" , NSStringFromSelector(_cmd));
+    
+    // TODO: refactor these bools into reusable macros or functions
+    
+    BOOL isColumn1 = [[tableColumn identifier] isEqualToString:kColumn1];
+    BOOL isColumn2 = [[tableColumn identifier] isEqualToString:kColumn2];
+    BOOL isColumn3 = [[tableColumn identifier] isEqualToString:kColumn3];
+    BOOL isColumn4 = [[tableColumn identifier] isEqualToString:kColumn4];
+    
+    if (isColumn1) {
+        [_backlog replaceObjectAtIndex:row withObject:object];
+        
+    } else if (isColumn2) {
+        [_inProgress replaceObjectAtIndex:row withObject:object];
+        
+    } else if (isColumn3) {
+        [_completed replaceObjectAtIndex:row withObject:object];
+        
+    } else if (isColumn4) {
+        [_onHold replaceObjectAtIndex:row withObject:object];
+    }
+    
+}
+
 - (void)tableViewSelectionDidChange:(NSNotification *)notification
 {
     NSLog(@"%@" , NSStringFromSelector(_cmd));
     
 }
+
+// TODO: Restrict highlight to a single cell
+
+// TODO: Enable drag and drop for re-ordering and moving between columns
 
 @end
