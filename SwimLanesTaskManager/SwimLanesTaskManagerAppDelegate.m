@@ -30,11 +30,21 @@ NSString *const kColumn4 = @"col4";
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     NSLog(@"%@" , NSStringFromSelector(_cmd));
+    
+    // init arrays that hold the tasks
+    
+    _backlog = [[NSMutableArray alloc] init];
+    _inProgress = [[NSMutableArray alloc] init];
+    _completed = [[NSMutableArray alloc] init];
+    _onHold = [[NSMutableArray alloc] init];
 }
 
 - (IBAction)addTask:(id)sender
 {
     NSLog(@"%@" , NSStringFromSelector(_cmd));
+    
+    // a new task is always added to the backlog!
+    
     NSString *taskString = [taskTextField stringValue];
     if ([taskString length] != 0) {
         [_backlog addObject:taskString];
@@ -80,15 +90,32 @@ NSString *const kColumn4 = @"col4";
     NSLog(@"%@" , NSStringFromSelector(_cmd));
     NSString *result = nil;
     
-    if ([[tableColumn identifier] isEqualToString:kColumn1]) {
+    // truth table to simplify ugly if/else statements below
+    
+    // TODO: Should I cache these values for performance?
+    
+    BOOL isColumn1 = [[tableColumn identifier] isEqualToString:kColumn1];
+    BOOL isColumn2 = [[tableColumn identifier] isEqualToString:kColumn2];
+    BOOL isColumn3 = [[tableColumn identifier] isEqualToString:kColumn3];
+    BOOL isColumn4 = [[tableColumn identifier] isEqualToString:kColumn4];
+    
+    BOOL isBacklogGreaterThanZero = [_backlog count] > 0;
+    BOOL isInProgressGreaterThanZero = [_inProgress count] > 0;
+    BOOL isCompletedGreaterThanZero = [_completed count] > 0;
+    BOOL isOnHoldGreaterThanZero = [_onHold count] > 0;
+    
+    // ugly if/else statement which are now more readable
+    
+    if (isColumn1 && isBacklogGreaterThanZero) {
         result = [_backlog objectAtIndex:row];
-    } else if ([[tableColumn identifier] isEqualToString:kColumn2]) {
+        
+    } else if (isColumn2 && isInProgressGreaterThanZero) {
         result = [_inProgress objectAtIndex:row];
         
-    } else if ([[tableColumn identifier] isEqualToString:kColumn3]) {
+    } else if (isColumn3 && isCompletedGreaterThanZero) {
         result = [_completed objectAtIndex:row];
        
-    } else if ([[tableColumn identifier] isEqualToString:kColumn4]) {
+    } else if (isColumn4 && isOnHoldGreaterThanZero) {
         result = [_onHold objectAtIndex:row];
     }
     
